@@ -17,6 +17,7 @@
                 $DisplayForm = FALSE;
             } else {
                 echo "<p>You need to enter a numeric value.</p>\n<p>Try again..";
+                $Number = ''; 
             }
         }
 
@@ -29,7 +30,7 @@
             </form>
             <?php
         } else {
-            echo "<p>Thank you for entering a number .</p>\n";
+            echo "<p>Thank you for entering a number.</p>\n";
             echo "<p>Your number, $Number, squared is " . ($Number*$Number) . ".</p>\n ";
             echo "<p><a href=\"NumberForm.php\">Try again?</a></p>\n";
         }
